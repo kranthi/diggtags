@@ -1,0 +1,21 @@
+# Uncomment this if you reference any of your controllers in activate
+# require_dependency 'application'
+
+class DiggExtension < Radiant::Extension
+  version "1.0"
+  description "Describe your extension here"
+  url "http://yourwebsite.com/digg"
+  
+  # define_routes do |map|
+  #   map.connect 'admin/digg/:action', :controller => 'admin/digg'
+  # end
+  
+  def activate
+    # admin.tabs.add "Digg", "/admin/digg", :after => "Layouts", :visibility => [:all]
+  end
+  
+  def deactivate
+    # admin.tabs.remove "Digg"
+  end
+  
+end
